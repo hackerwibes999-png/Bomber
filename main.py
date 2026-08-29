@@ -7,11 +7,11 @@ import aiohttp
 app = Flask(__name__)
 CORS(app)
 
-ADMIN_PASSWORD = "admin123"  # 🔥 change karo
+ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "@Hackerwibes8454")  # 🔥 change karo
 
 # In-memory data – tu JSON file bhi use kar sakta hai
 DATA = {
-    "owners": [8978106847],
+    "owners": [5468237078],
     "admins": [],
     "banned": [],
     "users": {},
